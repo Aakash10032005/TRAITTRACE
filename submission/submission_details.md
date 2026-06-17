@@ -34,12 +34,12 @@ The frontend uses a dual-concept split-screen interface:
 ---
 
 ### FIELD 3: Repository URL
-`https://github.com/Aakash10032005/TRAITTRACE.git`
+`https://github.com/Aakash10032005/TRAITTRACE`
 
 ---
 
 ### FIELD 4: Demo Link
-`http://localhost:3000` *(Local host prototype)*
+`https://traittrace-rmoi.vercel.app`
 
 ---
 
