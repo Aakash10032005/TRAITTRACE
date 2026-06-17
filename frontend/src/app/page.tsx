@@ -21,6 +21,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [isInitial, setIsInitial] = useState(true);
   const [logs, setLogs] = useState<string[]>([]);
+  const [widgetKey, setWidgetKey] = useState(0); // forces widget full remount on new file
 
   useEffect(() => {
     initNewFile();
@@ -41,6 +42,7 @@ export default function Home() {
     });
     setIsInitial(true);
     setLogs([]);
+    setWidgetKey(k => k + 1); // remount the widget so deck resets to card 1
     addLog(`Opened intake file: ${uuid}`);
   };
 
@@ -127,6 +129,7 @@ export default function Home() {
           />
 
           <StorefrontWidget
+            key={widgetKey}
             onInteraction={handleInteraction}
             isLoading={isLoading}
           />

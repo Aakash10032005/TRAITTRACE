@@ -104,14 +104,14 @@ const WATCH_OFFERS: Record<string, WatchOffer> = {
 };
 
 // ISOLATED COMPONENT: SwipeCard
-// This encapsulates drag motion values to resolve stale bindings on cards 2-4
 interface SwipeCardProps {
   card: typeof TRAIT_DECKS[0];
   onSwipe: (direction: "left" | "right") => void;
   isLoading: boolean;
+  swipeDir: "left" | "right" | null;
 }
 
-function SwipeCard({ card, onSwipe, isLoading }: SwipeCardProps) {
+function SwipeCard({ card, onSwipe, isLoading, swipeDir }: SwipeCardProps) {
   const x = useMotionValue(0);
   const rotate = useTransform(x, [-180, 180], [-10, 10]);
   const opacity = useTransform(x, [-180, -120, 0, 120, 180], [0.55, 1, 1, 1, 0.55]);
@@ -133,9 +133,9 @@ function SwipeCard({ card, onSwipe, isLoading }: SwipeCardProps) {
       }}
       className="absolute w-full h-full rounded-none manila-card border-2 border-neutral-900 p-6 flex flex-col justify-between shadow-none cursor-grab active:cursor-grabbing overflow-hidden bg-[#faf7f0] z-10"
       exit={{
-        y: 30,
+        x: swipeDir === "left" ? -260 : swipeDir === "right" ? 260 : 0,
         opacity: 0,
-        transition: { duration: 0.2 }
+        transition: { duration: 0.22, ease: "easeIn" }
       }}
     >
       {/* Swipe indicators overlay */}
@@ -197,24 +197,23 @@ export default function StorefrontWidget({ onInteraction, isLoading }: Storefron
   const [currentIndex, setCurrentIndex] = useState(0);
   const [choices, setChoices] = useState<string[]>([]);
   const [showModal, setShowModal] = useState(false);
+  const [swipeDir, setSwipeDir] = useState<"left" | "right" | null>(null);
 
   const activeCard = TRAIT_DECKS[currentIndex];
 
   const handleSwipe = (direction: "left" | "right") => {
     if (!activeCard || isLoading) return;
-
     const selectedValue = direction === "left" ? activeCard.leftLabel : activeCard.rightLabel;
-    
-    // Save selections local state to calculate smartwatch segment
+    setSwipeDir(direction);
     setChoices(prev => [...prev, selectedValue]);
     onInteraction(selectedValue, "swipe");
-
     setCurrentIndex((prev) => prev + 1);
   };
 
   const handleReset = () => {
     setCurrentIndex(0);
     setChoices([]);
+    setSwipeDir(null);
     setShowModal(false);
   };
 
@@ -235,15 +234,32 @@ export default function StorefrontWidget({ onInteraction, isLoading }: Storefron
   return (
     <div className="flex flex-col w-full max-w-md mx-auto h-[460px] font-sans">
       
-      {/* Widget Header progress count */}
+      {/* Widget Header with progress dots */}
       <div className="w-full flex justify-between items-center mb-3">
         <div>
           <span className="text-[10px] font-bold tracking-wider uppercase text-neutral-500">
             Consumer Profile Card Deck
           </span>
-          <h3 className="text-xs font-semibold text-neutral-700 uppercase tracking-tight font-mono mt-0.5">
-            Card {Math.min(currentIndex + 1, TRAIT_DECKS.length)} of {TRAIT_DECKS.length}
-          </h3>
+          <div className="flex items-center gap-2 mt-1">
+            <h3 className="text-xs font-semibold text-neutral-700 uppercase tracking-tight font-mono">
+              Card {Math.min(currentIndex + 1, TRAIT_DECKS.length)} of {TRAIT_DECKS.length}
+            </h3>
+            {/* Step progress dots */}
+            <div className="flex gap-1">
+              {TRAIT_DECKS.map((_, i) => (
+                <span
+                  key={i}
+                  className={`block w-1.5 h-1.5 rounded-full transition-all duration-300 ${
+                    i < currentIndex
+                      ? "bg-neutral-900"
+                      : i === currentIndex
+                      ? "bg-[#b91c1c] scale-125"
+                      : "bg-neutral-300"
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
         </div>
         <button
           onClick={handleReset}
@@ -263,6 +279,7 @@ export default function StorefrontWidget({ onInteraction, isLoading }: Storefron
               card={activeCard}
               onSwipe={handleSwipe}
               isLoading={isLoading}
+              swipeDir={swipeDir}
             />
           ) : (
             <motion.div
@@ -328,7 +345,7 @@ export default function StorefrontWidget({ onInteraction, isLoading }: Storefron
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="w-full max-w-lg manila-card border-2 border-neutral-900 rounded-none bg-[#fdfbf7] p-6 font-mono text-neutral-900 shadow-2xl relative"
+              className="w-full max-w-lg manila-card border-2 border-neutral-900 rounded-none bg-[#fdfbf7] p-6 font-mono text-neutral-900 shadow-2xl relative max-h-[90vh] overflow-y-auto"
             >
               {/* Close Button */}
               <button

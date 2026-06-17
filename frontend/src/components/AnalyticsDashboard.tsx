@@ -119,8 +119,8 @@ export default function AnalyticsDashboard({ graphData, sessionId }: AnalyticsDa
               ctx.stroke();
 
               // Text labeling (IBM Plex Mono)
-              const fontSize = isUser ? 3.5 : 3.0;
-              ctx.font = `${fontSize}px "IBM Plex Mono", monospace`;
+              const fontSize = isUser ? 4.5 : 4.0;
+              ctx.font = `bold ${fontSize}px "IBM Plex Mono", monospace`;
               ctx.textAlign = "center";
               ctx.textBaseline = "middle";
               ctx.fillStyle = isUser ? "#ffffff" : "#cbd5e1";
