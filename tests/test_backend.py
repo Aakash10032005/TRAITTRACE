@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import patch, MagicMock
-from fastapi.testclient import TestClient
+from fastapi.testclient import TestClient  # requires httpx (requirements-dev.txt)
 
 from backend.main import app
 from backend.graph_engine import TraitGraphManager
