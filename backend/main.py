@@ -23,6 +23,7 @@ app = FastAPI(
 
 ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://traittrace-production.up.railway.app",
     os.getenv("FRONTEND_URL", ""),
 ]
 

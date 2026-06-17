@@ -31,11 +31,14 @@ export interface InteractionResponse {
   graph_snapshot: GraphSnapshot;
 }
 
+const API_BASE =
+  process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+
 /**
  * Sends a visitor choice to the FastAPI graph personalization endpoint
  */
 export async function submitInteraction(payload: InteractionRequest): Promise<InteractionResponse> {
-  const response = await fetch("http://localhost:8000/api/interact", {
+  const response = await fetch(`${API_BASE}/api/interact`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
