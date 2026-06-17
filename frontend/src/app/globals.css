@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #f4eee1; /* Warm manila cream background */
+    color: #1c1d1f; /* Off-black ink */
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6, .mono-text {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+
+/* Manila Folder Aesthetic */
+.manila-card {
+  background-color: #faf7f0;
+  border: 1px solid #d4c5ab;
+  box-shadow: 2px 2px 0px rgba(212, 197, 171, 0.4);
+}
+
+.manila-input-border {
+  border: 1px solid #1c1d1f;
+}
+
+/* Stamp Red Accent */
+.stamp-red-bg {
+  background-color: #b91c1c;
+}
+
+.stamp-red-text {
+  color: #b91c1c;
+}
+
+.stamp-red-border {
+  border-color: #b91c1c;
+}
+
+/* Inverted Marketer Control Room */
+.control-room {
+  background-color: #111213;
+  color: #e2e4e9;
+}
+
+.control-card {
+  background-color: #17181a;
+  border: 1px solid #2a2c30;
+}
+
+/* Perforation Divider Seam */
+.perforated-seam {
+  background-image: radial-gradient(circle, #f4eee1 3px, transparent 3px);
+  background-size: 16px 16px;
+  background-position: center;
+}
+
+.perforated-vertical-border {
+  border-left: 2px dashed #d4c5ab;
+}
+
+.perforated-vertical-border-dark {
+  border-left: 2px dashed #2a2c30;
+}
+
+/* Custom Scrollbars: Typewriter-ink style */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4c5ab;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1c1d1f;
+}
+
+.control-room ::-webkit-scrollbar-thumb {
+  background: #2a2c30;
+}
+
+.control-room ::-webkit-scrollbar-thumb:hover {
+  background: #e2e4e9;
+}

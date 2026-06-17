@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="white"/>
+  <!-- Main outer bezel -->
+  <circle cx="195" cy="200" r="170" fill="none" stroke="#888" stroke-width="2.5"/>
+  <!-- Bezel tick marks -->
+  <g stroke="#888" stroke-width="1.5">
+    <line x1="195" y1="32" x2="195" y2="48"/>
+    <line x1="195" y1="352" x2="195" y2="368"/>
+    <line x1="27" y1="200" x2="43" y2="200"/>
+    <line x1="347" y1="200" x2="363" y2="200"/>
+  </g>
+  <!-- Tick marks around bezel (60 ticks) -->
+  <g stroke="#999" stroke-width="1">
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(6 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(12 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(18 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(24 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="45" transform="rotate(30 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(36 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(42 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(48 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(54 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="45" transform="rotate(60 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(66 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(72 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(78 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(84 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="45" transform="rotate(90 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(96 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(102 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(108 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(114 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="45" transform="rotate(120 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(126 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(132 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(138 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(144 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="45" transform="rotate(150 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(156 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(162 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(168 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(174 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="45" transform="rotate(180 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(186 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(192 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(198 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(204 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="45" transform="rotate(210 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(216 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(222 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(228 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(234 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="45" transform="rotate(240 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(246 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(252 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(258 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(264 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="45" transform="rotate(270 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(276 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(282 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(288 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(294 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="45" transform="rotate(300 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(306 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(312 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(318 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(324 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="45" transform="rotate(330 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(336 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(342 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(348 195 200)"/>
+    <line x1="195" y1="33" x2="195" y2="42" transform="rotate(354 195 200)"/>
+  </g>
+  <!-- Hour markers (diamonds/rectangles) -->
+  <g fill="none" stroke="#888" stroke-width="1.5">
+    <rect x="190" y="48" width="10" height="16" rx="1"/>
+    <rect x="190" y="336" width="10" height="16" rx="1"/>
+    <rect x="46" y="194" width="16" height="12" rx="1"/>
+    <rect x="328" y="194" width="16" height="12" rx="1"/>
+    <!-- Diamond markers at 1,2,4,5,7,8,10,11 o'clock -->
+    <polygon points="239,70 243,78 239,86 235,78" />
+    <polygon points="282,100 288,104 282,114 276,104" />
+    <polygon points="66,148 74,152 66,160 58,152" />
+    <polygon points="66,240 74,244 66,252 58,244" />
+    <polygon points="282,286 288,296 282,300 276,296" />
+    <polygon points="239,314 243,322 239,330 235,322" />
+    <polygon points="151,70 155,78 151,86 147,78" />
+    <polygon points="108,100 114,104 108,114 102,104" />
+  </g>
+  <!-- Main dial face -->
+  <circle cx="195" cy="200" r="148" fill="white" stroke="#aaa" stroke-width="1"/>
+  <!-- Crown / pusher buttons -->
+  <rect x="360" y="165" width="28" height="20" rx="4" fill="none" stroke="#888" stroke-width="1.5"/>
+  <rect x="360" y="215" width="24" height="18" rx="4" fill="none" stroke="#888" stroke-width="1.5"/>
+  <rect x="364" y="192" width="32" height="16" rx="5" fill="none" stroke="#888" stroke-width="2"/>
+  <line x1="364" y1="196" x2="396" y2="196" stroke="#888" stroke-width="1"/>
+  <line x1="364" y1="200" x2="396" y2="200" stroke="#888" stroke-width="1"/>
+  <line x1="364" y1="204" x2="396" y2="204" stroke="#888" stroke-width="1"/>
+  <!-- Sub-dial LEFT (9 o'clock position) - 30min counter -->
+  <circle cx="135" cy="200" r="42" fill="white" stroke="#aaa" stroke-width="1.2"/>
+  <circle cx="135" cy="200" r="36" fill="none" stroke="#ccc" stroke-width="0.8"/>
+  <!-- Sub-dial tick marks -->
+  <g stroke="#bbb" stroke-width="1">
+    <line x1="135" y1="159" x2="135" y2="165" transform="rotate(0 135 200)"/>
+    <line x1="135" y1="159" x2="135" y2="165" transform="rotate(30 135 200)"/>
+    <line x1="135" y1="159" x2="135" y2="165" transform="rotate(60 135 200)"/>
+    <line x1="135" y1="159" x2="135" y2="165" transform="rotate(90 135 200)"/>
+    <line x1="135" y1="159" x2="135" y2="165" transform="rotate(120 135 200)"/>
+    <line x1="135" y1="159" x2="135" y2="165" transform="rotate(150 135 200)"/>
+    <line x1="135" y1="159" x2="135" y2="165" transform="rotate(180 135 200)"/>
+    <line x1="135" y1="159" x2="135" y2="165" transform="rotate(210 135 200)"/>
+    <line x1="135" y1="159" x2="135" y2="165" transform="rotate(240 135 200)"/>
+    <line x1="135" y1="159" x2="135" y2="165" transform="rotate(270 135 200)"/>
+    <line x1="135" y1="159" x2="135" y2="165" transform="rotate(300 135 200)"/>
+    <line x1="135" y1="159" x2="135" y2="165" transform="rotate(330 135 200)"/>
+  </g>
+  <!-- Sub-dial hands left -->
+  <line x1="135" y1="200" x2="135" y2="168" stroke="#999" stroke-width="2" stroke-linecap="round"/>
+  <line x1="135" y1="200" x2="120" y2="210" stroke="#999" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="135" cy="200" r="3" fill="#aaa"/>
+  <!-- Sub-dial RIGHT (3 o'clock position) - 12hr counter -->
+  <circle cx="255" cy="200" r="42" fill="white" stroke="#aaa" stroke-width="1.2"/>
+  <circle cx="255" cy="200" r="36" fill="none" stroke="#ccc" stroke-width="0.8"/>
+  <g stroke="#bbb" stroke-width="1">
+    <line x1="255" y1="159" x2="255" y2="165" transform="rotate(0 255 200)"/>
+    <line x1="255" y1="159" x2="255" y2="165" transform="rotate(30 255 200)"/>
+    <line x1="255" y1="159" x2="255" y2="165" transform="rotate(60 255 200)"/>
+    <line x1="255" y1="159" x2="255" y2="165" transform="rotate(90 255 200)"/>
+    <line x1="255" y1="159" x2="255" y2="165" transform="rotate(120 255 200)"/>
+    <line x1="255" y1="159" x2="255" y2="165" transform="rotate(150 255 200)"/>
+    <line x1="255" y1="159" x2="255" y2="165" transform="rotate(180 255 200)"/>
+    <line x1="255" y1="159" x2="255" y2="165" transform="rotate(210 255 200)"/>
+    <line x1="255" y1="159" x2="255" y2="165" transform="rotate(240 255 200)"/>
+    <line x1="255" y1="159" x2="255" y2="165" transform="rotate(270 255 200)"/>
+    <line x1="255" y1="159" x2="255" y2="165" transform="rotate(300 255 200)"/>
+    <line x1="255" y1="159" x2="255" y2="165" transform="rotate(330 255 200)"/>
+  </g>
+  <!-- Sub-dial hands right -->
+  <line x1="255" y1="200" x2="265" y2="168" stroke="#999" stroke-width="2" stroke-linecap="round"/>
+  <line x1="255" y1="200" x2="270" y2="215" stroke="#999" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="255" cy="200" r="3" fill="#aaa"/>
+  <!-- Sub-dial BOTTOM (6 o'clock position) - seconds -->
+  <circle cx="195" cy="280" r="42" fill="white" stroke="#aaa" stroke-width="1.2"/>
+  <circle cx="195" cy="280" r="36" fill="none" stroke="#ccc" stroke-width="0.8"/>
+  <g stroke="#bbb" stroke-width="1">
+    <line x1="195" y1="239" x2="195" y2="245" transform="rotate(0 195 280)"/>
+    <line x1="195" y1="239" x2="195" y2="245" transform="rotate(30 195 280)"/>
+    <line x1="195" y1="239" x2="195" y2="245" transform="rotate(60 195 280)"/>
+    <line x1="195" y1="239" x2="195" y2="245" transform="rotate(90 195 280)"/>
+    <line x1="195" y1="239" x2="195" y2="245" transform="rotate(120 195 280)"/>
+    <line x1="195" y1="239" x2="195" y2="245" transform="rotate(150 195 280)"/>
+    <line x1="195" y1="239" x2="195" y2="245" transform="rotate(180 195 280)"/>
+    <line x1="195" y1="239" x2="195" y2="245" transform="rotate(210 195 280)"/>
+    <line x1="195" y1="239" x2="195" y2="245" transform="rotate(240 195 280)"/>
+    <line x1="195" y1="239" x2="195" y2="245" transform="rotate(270 195 280)"/>
+    <line x1="195" y1="239" x2="195" y2="245" transform="rotate(300 195 280)"/>
+    <line x1="195" y1="239" x2="195" y2="245" transform="rotate(330 195 280)"/>
+  </g>
+  <!-- Date window -->
+  <rect x="228" y="272" width="20" height="16" rx="1" fill="white" stroke="#aaa" stroke-width="1"/>
+  <!-- Sub-dial bottom hand -->
+  <line x1="195" y1="280" x2="205" y2="252" stroke="#999" stroke-width="2" stroke-linecap="round"/>
+  <line x1="195" y1="280" x2="188" y2="294" stroke="#999" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="195" cy="280" r="3" fill="#aaa"/>
+  <!-- Main hands -->
+  <!-- Hour hand -->
+  <line x1="195" y1="200" x2="195" y2="120" stroke="#777" stroke-width="5" stroke-linecap="round"/>
+  <!-- Minute hand -->
+  <line x1="195" y1="200" x2="240" y2="110" stroke="#777" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Seconds hand (sweep) -->
+  <line x1="195" y1="215" x2="195" y2="88" stroke="#aaa" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Center cap -->
+  <circle cx="195" cy="200" r="5" fill="#888"/>
+  <circle cx="195" cy="200" r="2.5" fill="white"/>
+</svg>
