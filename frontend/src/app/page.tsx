@@ -132,10 +132,6 @@ export default function Home() {
           />
         </div>
 
-        {/* Footer info */}
-        <div className="text-[10px] text-neutral-500 font-mono tracking-tight pt-4 border-t border-[#d4c5ab]">
-          INTAKE PROTOCOL ID: {sessionId || "UNRESOLVED"}
-        </div>
       </section>
 
       {/* RIGHT SIDE: MARKETER'S CONTROL ROOM (Inverted Near-Black) */}
@@ -197,11 +193,6 @@ export default function Home() {
 
         </div>
 
-        {/* Footer info */}
-        <div className="text-[10px] text-slate-500 font-mono tracking-tight pt-4 border-t border-slate-900 flex justify-between">
-          <span>GRAPH ENGINE PORT: 8000</span>
-          <span>NO COOKIES WRITTEN</span>
-        </div>
       </section>
 
     </main>
